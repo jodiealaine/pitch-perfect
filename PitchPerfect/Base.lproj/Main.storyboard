@@ -18,21 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af9-sl-WC5">
-                                <rect key="frame" x="247" y="382" width="107" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1R-h1-JnY">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="250" y="92" width="100" height="100"/>
                                 <state key="normal" image="record"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zqn-sa-GDT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af9-sl-WC5">
+                                <rect key="frame" x="247" y="207" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-vA-Szt">
-                                <rect key="frame" x="275" y="429" width="50" height="50"/>
+                                <rect key="frame" x="275" y="236" width="50" height="50"/>
                                 <state key="normal" image="stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7a-Vy-div"/>
@@ -41,12 +41,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="af9-sl-WC5" firstAttribute="top" secondItem="d1R-h1-JnY" secondAttribute="bottom" constant="32" id="2q2-aR-izL"/>
-                            <constraint firstItem="d1R-h1-JnY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JqY-wC-kKb"/>
-                            <constraint firstItem="af9-sl-WC5" firstAttribute="leading" secondItem="0QW-vA-Szt" secondAttribute="trailing" constant="-78" id="Xaq-5n-wNh"/>
-                            <constraint firstItem="af9-sl-WC5" firstAttribute="leading" secondItem="d1R-h1-JnY" secondAttribute="trailing" constant="-103" id="eqv-br-UtP"/>
-                            <constraint firstItem="d1R-h1-JnY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mm5-uX-y4b"/>
-                            <constraint firstItem="0QW-vA-Szt" firstAttribute="top" secondItem="af9-sl-WC5" secondAttribute="bottom" constant="26" id="weu-gv-eer"/>
+                            <constraint firstItem="d1R-h1-JnY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="WxW-7z-hwt"/>
+                            <constraint firstItem="af9-sl-WC5" firstAttribute="top" secondItem="d1R-h1-JnY" secondAttribute="bottom" constant="15" id="d01-fN-alA"/>
+                            <constraint firstItem="af9-sl-WC5" firstAttribute="leading" secondItem="0QW-vA-Szt" secondAttribute="trailing" constant="-78" id="ila-QG-dQk"/>
+                            <constraint firstItem="0QW-vA-Szt" firstAttribute="top" secondItem="af9-sl-WC5" secondAttribute="bottom" constant="8" id="kGo-Dz-mLy"/>
+                            <constraint firstItem="d1R-h1-JnY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnm-pG-xda"/>
+                            <constraint firstItem="af9-sl-WC5" firstAttribute="leading" secondItem="d1R-h1-JnY" secondAttribute="trailing" constant="-103" id="th2-sa-CzP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V0g-wE-Qjc"/>
